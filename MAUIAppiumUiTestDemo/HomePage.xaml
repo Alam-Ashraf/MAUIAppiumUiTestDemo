@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIAppiumUiTestDemo.HomePage"
+             Title="HomePage">
+    <VerticalStackLayout Spacing="10" Padding="10">
+        <Entry x:Name="Num1" AutomationId="Num1" Keyboard="Numeric" Placeholder="Enter first number"/>
+        <Entry x:Name="Num2" AutomationId="Num2" Keyboard="Numeric" Placeholder="Enter second number"/>
+
+        <Label x:Name="ResultTxt" AutomationId="ResultText"/>
+
+        <Button Text="Add" AutomationId="Addition" Clicked="OnAddClicked"/>
+        <Button Text="Multiply" AutomationId="Multiplication" Clicked="OnMultiplyClicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

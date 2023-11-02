@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIAppiumUiTestDemo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="10"
+            Padding="10">
+
+            <Label Text="User name" />
+            <Entry  x:Name="UserName" AutomationId="UserName" />
+            <Label Text="Password" />
+            <Entry x:Name="Password"  AutomationId="UserPassword" IsPassword="True" />
+            <Button x:Name="LoginButton" AutomationId="LoginButton" Text="Login" Clicked="LoginButton_Clicked" />
+            <Label x:Name="StatusLabel" AutomationId="StatusLabel" />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
